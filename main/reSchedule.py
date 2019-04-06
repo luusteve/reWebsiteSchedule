@@ -5,16 +5,16 @@ import time
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument("--incognito")
 
-driver = webdriver.Chrome(r"PATH to chromedriver.exe" ,options = chrome_options)
+driver = webdriver.Chrome(r"..\drivers\chromedriver.exe" ,options = chrome_options)
 minerva = "https://www.mcgill.ca/minerva"
 #Enter student email
-id = ""
+id = "Enter Student Email"
 #Enter password
-pasw = ""
-#Enter desired semester
-semester = ""
+pasw = "Enter Password"
+#Enter desired semester Example: Summer 2019
+semester = "Summer 2019"
 #input CRN code
-desiredCourse = ""
+desiredCourse = "Enter CRN"
 driver.get(minerva)
 
 idInput = driver.find_element_by_id("mcg_un")
